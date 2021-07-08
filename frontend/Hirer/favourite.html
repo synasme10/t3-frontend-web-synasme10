@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DaYJoB</title>
+  <link rel=" icon" type="image/gif/png" href="../../resources/indexpage/images/dayjoblogo1.png"  />
+  <link rel="stylesheet" href="../../resources/dashboard/css/css/formstyle.css"/>
+
+  <link href="../../resources/dashboard/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="../../resources/dashboard/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+  <link href="../../resources/dashboard/css/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <link href="../../resources/dashboard/css/css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../resources/css/style.css">
+
+</head>
+
+<body id="page-top">
+
+
+<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+  <a  href="hirerdashboard.html"><img src="../../resources/indexpage/images/dayjoblogo1.png" alt="Dayjob logo" height="60px" width="160px"></a>
+
+  <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+    <i class="fas fa-align-justify"></i>
+  </button>
+
+  <form  role="search" method="post" action="#" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search ..." id="search" name="search">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div id="searchlist"></div>
+    </div>
+  </form>
+  <ul class="navbar-nav ml-auto mr-0 mr-md-3 my-2 my-md-0">
+    <li class="nav-item ">
+      <a class="nav-link" href="favourite.html">
+        <i class="fa fa-heart"></i>
+        <span>Favourite</span>
+      </a>
+    </li>
+    <div class="col-sm-1"></div>
+    <li class="nav-item">
+      <div id="userphoto" style="float: left;">
+
+      </div>
+    </li>
+    <li class="nav-item dropdown ">
+      <a class="nav-link dropdown-toggle" href="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span id="usernamedisplay"> </span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+        <a class="dropdown-item" href="hirerprofile.html">My Profile</a>
+        <a class="dropdown-item" href="updatehirerprofile.html">Change Profile</a>
+        <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal">Logout</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+<div id="wrapper">
+
+  <ul class="sidebar navbar-nav">
+    <li class="nav-item active">
+
+      <a class="nav-link"  href="hirerdashboard.html" >
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Hirer Dashboard</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="bookingdetail.html">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Booking Detail</span></a>
+    </li>
+
+    <button type="button" class="btn btn-info" >Hire Fast</button><br>
+    <div class="social-small">
+      <div class="social-small">
+        <a href="#" class="social-icon"><img src="../../resources/images/facebook.png" alt="First slide" width="40px" height="40px"></a>
+        <a href="#" class="social-icon"><img src="../../resources/images/instagram.png" alt="First slide" width="40px" height="40px"></a>
+        <a href="#" class="social-icon"><img src="../../resources/images/twitter.png" alt="First slide" width="40px" height="40px"></a>
+        <a href="#" class="social-icon"><img src="../../resources/images/youtube.png" alt="First slide" width="40px" height="40px"></a>
+      </div>
+    </div>
+  </ul>
+
+  <div id="content-wrapper">
+
+
+
+
+    <div class="container">
+<p id="message"></p>
+      <p id="favexist"></p>
+
+      <div class="row">
+        <div class="table-responsive">
+          <div class="col-sm-12 col-sm-offset-2">
+            <h3 align="center">Favourite</h3><br/>
+
+            <table class="table table-striped table-dark table-hover">
+              <thead class="thead-dark">
+              <tr class="alert-dark" align="center">
+                <th> </th>
+                <th> Worker details</th>
+                <th>Email </th>
+                <th >Language</th>
+                <th>Status</th>
+                <th >Delete</th>
+
+              </tr>
+              </thead>
+              <tbody id="favouritedata">
+<!--              <tr >-->
+<!--                <td align="center">-->
+<!--                  <img src="../../resources/images/facebook.png" alt="product" height="100px" width="100px"></td>-->
+<!--                <td> <h5>Sujan Maharjan</h5>-->
+<!--                  <div class="detail">-->
+<!--                    <br> Rs 5000/hr Carpentry for 17 years-->
+<!--                    <br> job completed-->
+<!--                    <br> Address-->
+<!--                  </div>-->
+
+<!--                </td>-->
+<!--                <td align="center">serenade10@gmail.com </td>-->
+<!--                <td align="center">Nepali, Hindi and English</td>-->
+<!--                <td align="center">-->
+<!--                 Available-->
+<!--                <td align="center">-->
+<!--                      <button type="submit" value="Delete" id="btndeletefav" class="btn btn-info btn-sm"><i class="fa fa-trash-alt"></i></button>-->
+<!--                </td>-->
+<!--              </tr>-->
+            </tbody>
+
+
+
+            </table>
+
+
+          </div></div></div>
+
+    </div>
+
+
+  </div>
+
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>ment       <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary " id="logout" type="button" >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto">
+      <span>Copyright © Your Website 2019</span>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../../resources/dashboard/jquery/jquery.min.js"></script>
+<script src="../../resources/dashboard/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="../../resources/dashboard/js/sb-admin.min.js"></script>
+
+<script src="../../resources/dashboard/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../../resources/dayjobjs/favourite.js"></script>
+<script src="../../resources/dayjobjs/usernamedisplay.js"></script>
+<script src="../../resources/dayjobjs/logout.js"></script>
+<script src="../../resources/dayjobjs/hirertoken.js"></script>
+</body>
+
+</html>
