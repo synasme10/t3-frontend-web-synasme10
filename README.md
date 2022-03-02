@@ -1,5 +1,5 @@
-# youtube: https://youtu.be/T22ZAonGDks
-# DayJob -worker finder application 
+# youtube: https://youtu.be/fEncTIZLlZo
+# DayJob  application 
 # Name: Sujan Maharjan
 
 # CollegeID: 170028
@@ -18,7 +18,8 @@ worker to find job easily and hirer to fill their vacants sit. It save time for 
 I have created web based application using HMTL, CSS, BOOTSTRAP, JavaScript, etc. It is user friendly GUI which helps user to 
 interact with application.
 
-
+#Backend 
+Nodejs, mySql
 
 # List of Main Features
 List out 3/4 main technical features of your project
